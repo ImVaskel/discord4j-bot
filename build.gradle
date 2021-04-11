@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'xyz.vaskel'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.discord4j:discord4j-core:3.1.5"
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.11.1'
+
+    compile 'ch.qos.logback:logback-core:1.2.3'
+    testCompile 'org.slf4j:slf4j-api:1.7.30'
+
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+}
+
+test {
+    useJUnitPlatform()
+}
